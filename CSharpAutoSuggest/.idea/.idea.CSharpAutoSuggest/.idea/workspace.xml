@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa5af45a-27c5-40fb-9350-6a3593831700" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/CSharpAutoSuggest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAutoSuggest.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/AutoSuggestService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/AutoSuggestService.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F60EE2EA-4F3A-4DD2-BFDB-6959B9D6ECFA/E1/throwhelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Endpoints/AutoSuggestModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Services/AutoSuggestService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CandidateAdditions/Trie.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CandidateAdditions/CandidateAdditions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CandidateAdditions/TrieNode.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Entities/ISmallJsonFile.cs" />
+        <option value="$PROJECT_DIR$/CandidateAdditions/TrieNode.cs" />
+        <option value="$PROJECT_DIR$/CandidateAdditions/CandidateAdditions.cs" />
+        <option value="$PROJECT_DIR$/CandidateAdditions/Trie.cs" />
+        <option value="$PROJECT_DIR$/Services/AutoSuggestService.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XMBaJgGeFYw6EmRWOgceyC9gtN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.environmentSetup" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CSharpAutoSuggest" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/CSharpAutoSuggest.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa5af45a-27c5-40fb-9350-6a3593831700" name="Default Changelist" comment="" />
+      <created>1580846145410</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580846145410</updated>
+      <workItem from="1580846148134" duration="101000" />
+      <workItem from="1580846436188" duration="3897000" />
+      <workItem from="1580859374563" duration="155000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="903" height="644" key="GridCell.Tab.0.bottom" timestamp="1580859679511">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="903" height="644" key="GridCell.Tab.0.bottom/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580859679511" />
+    <state width="903" height="644" key="GridCell.Tab.0.center" timestamp="1580859679511">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="903" height="644" key="GridCell.Tab.0.center/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580859679511" />
+    <state width="903" height="644" key="GridCell.Tab.0.left" timestamp="1580859679510">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="903" height="644" key="GridCell.Tab.0.left/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580859679510" />
+    <state width="903" height="644" key="GridCell.Tab.0.right" timestamp="1580859679511">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="903" height="644" key="GridCell.Tab.0.right/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580859679511" />
+    <state width="1579" height="654" key="GridCell.Tab.1.bottom" timestamp="1580850692482">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.1.bottom/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692482" />
+    <state width="1579" height="654" key="GridCell.Tab.1.center" timestamp="1580850692481">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.1.center/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692481" />
+    <state width="1579" height="654" key="GridCell.Tab.1.left" timestamp="1580850692481">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.1.left/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692481" />
+    <state width="1579" height="654" key="GridCell.Tab.1.right" timestamp="1580850692481">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.1.right/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692481" />
+    <state width="1579" height="654" key="GridCell.Tab.2.bottom" timestamp="1580850692482">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.2.bottom/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692482" />
+    <state width="1579" height="654" key="GridCell.Tab.2.center" timestamp="1580850692482">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.2.center/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692482" />
+    <state width="1579" height="654" key="GridCell.Tab.2.left" timestamp="1580850692482">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.2.left/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692482" />
+    <state width="1579" height="654" key="GridCell.Tab.2.right" timestamp="1580850692482">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.2.right/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692482" />
+    <state width="1579" height="654" key="GridCell.Tab.3.bottom" timestamp="1580850692483">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.3.bottom/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692483" />
+    <state width="1579" height="654" key="GridCell.Tab.3.center" timestamp="1580850692483">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.3.center/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692483" />
+    <state width="1579" height="654" key="GridCell.Tab.3.left" timestamp="1580850692483">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.3.left/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692483" />
+    <state width="1579" height="654" key="GridCell.Tab.3.right" timestamp="1580850692483">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state width="1579" height="654" key="GridCell.Tab.3.right/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850692483" />
+    <state x="4301" y="539" key="SettingsEditor" timestamp="1580846297910">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state x="4301" y="539" key="SettingsEditor/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580846297910" />
+    <state x="4463" y="419" width="672" height="678" key="search.everywhere.popup" timestamp="1580850045077">
+      <screen x="3200" y="0" width="3200" height="1800" />
+    </state>
+    <state x="4463" y="419" width="672" height="678" key="search.everywhere.popup/3200.0.3200.1800/0.23.3200.1777@3200.0.3200.1800" timestamp="1580850045077" />
+  </component>
+</project>

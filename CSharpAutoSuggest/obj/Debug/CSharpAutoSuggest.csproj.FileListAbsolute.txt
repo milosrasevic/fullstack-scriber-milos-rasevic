@@ -1,0 +1,12 @@
+/Users/doncl/donrepo2/CSharpAutoSuggest/obj/Debug/CSharpAutoSuggest.csprojAssemblyReference.cache
+/Users/doncl/donrepo2/CSharpAutoSuggest/obj/Debug/CSharpAutoSuggest.exe.config
+/Users/doncl/donrepo2/CSharpAutoSuggest/obj/Debug/CSharpAutoSuggest.csproj.CoreCompileInputs.cache
+/Users/doncl/donrepo2/CSharpAutoSuggest/obj/Debug/CSharpAutoSuggest.exe
+/Users/doncl/donrepo2/CSharpAutoSuggest/obj/Debug/CSharpAutoSuggest.pdb
+/Users/doncl/donrepo2/CSharpAutoSuggest/bin/Debug/CSharpAutoSuggest.exe.config
+/Users/doncl/donrepo2/CSharpAutoSuggest/bin/Debug/CSharpAutoSuggest.exe
+/Users/doncl/donrepo2/CSharpAutoSuggest/bin/Debug/CSharpAutoSuggest.pdb
+/Users/doncl/donrepo2/CSharpAutoSuggest/bin/Debug/log4net.dll
+/Users/doncl/donrepo2/CSharpAutoSuggest/bin/Debug/Newtonsoft.Json.dll
+/Users/doncl/donrepo2/CSharpAutoSuggest/bin/Debug/SmartThreadPool.dll
+/Users/doncl/donrepo2/CSharpAutoSuggest/obj/Debug/CSharpAutoSuggest.csproj.CopyComplete
