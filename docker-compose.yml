@@ -22,7 +22,7 @@ services:
       - 8080:8080
 
   swift:
-    image: swift:5.1
+    image: swift:4.0
     environment:
      FOO: bar
     ports:
@@ -31,7 +31,7 @@ services:
   swift-auto-suggest:
     command: "/code/run.sh"
     entrypoint: "/bin/sh"
-    image: swift:5.1.3
+    image: swift:4.0
     ports:
       - 8090:8090
     volumes:
