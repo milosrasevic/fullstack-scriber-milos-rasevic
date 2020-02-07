@@ -2,9 +2,10 @@ import express from 'express'
 import JSONStream from 'JSONStream'
 import es from 'event-stream'
 import fs from 'fs'
+import process from 'process'
 
 const app = express()
-const port = 3000
+const port = process.env['port'] || 3000
 
 export interface Image {
     Height: number;
@@ -162,25 +163,31 @@ const getTracks = (prefix: string) => tracks
     }))
     .slice(0, 5)
 
-app.get('/autosuggest/releases', (req, res) => {
+app.get('/suggest/releases', (req, res) => {
     let prefix: string = req.query["prefix"]
-    const results = getReleases(prefix)
+    const results = {
+        suggestions: getReleases(prefix)
+    }
     res.send(JSON.stringify(results, null, 2))
 })
 
-app.get('/autosuggest/tracks', (req, res) => {
+app.get('/suggest/tracks', (req, res) => {
     let prefix: string = req.query["prefix"]
-    const results = getTracks(prefix)
+    const results = {
+        suggestions: getTracks(prefix)
+    }
     res.send(JSON.stringify(results, null, 2))
 })
 
-app.get('/autosuggest/artists', (req, res) => {
+app.get('/suggest/artists', (req, res) => {
     let prefix: string = req.query["prefix"]
-    const results = getArtists(prefix)
+    const results = {
+        suggestions: getArtists(prefix)
+    }
     res.send(JSON.stringify(results, null, 2))
 })
 
-app.get('/autosuggest/all', (req, res) => {
+app.get('/suggest/all', (req, res) => {
     let prefix: string = req.query["prefix"]
     const results = {
         artists: getArtists(prefix),

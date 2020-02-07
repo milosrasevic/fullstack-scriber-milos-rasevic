@@ -18,8 +18,9 @@ var express_1 = __importDefault(require("express"));
 var JSONStream_1 = __importDefault(require("JSONStream"));
 var event_stream_1 = __importDefault(require("event-stream"));
 var fs_1 = __importDefault(require("fs"));
+var process_1 = __importDefault(require("process"));
 var app = express_1["default"]();
-var port = 3000;
+var port = process_1["default"].env['port'] || 3000;
 var releases = [];
 var artists = [];
 var tracks = [];
@@ -73,22 +74,28 @@ var getTracks = function (prefix) { return tracks
     }
 }); })
     .slice(0, 5); };
-app.get('/autosuggest/releases', function (req, res) {
+app.get('/suggest/releases', function (req, res) {
     var prefix = req.query["prefix"];
-    var results = getReleases(prefix);
+    var results = {
+        suggestions: getReleases(prefix)
+    };
     res.send(JSON.stringify(results, null, 2));
 });
-app.get('/autosuggest/tracks', function (req, res) {
+app.get('/suggest/tracks', function (req, res) {
     var prefix = req.query["prefix"];
-    var results = getTracks(prefix);
+    var results = {
+        suggestions: getTracks(prefix)
+    };
     res.send(JSON.stringify(results, null, 2));
 });
-app.get('/autosuggest/artists', function (req, res) {
+app.get('/suggest/artists', function (req, res) {
     var prefix = req.query["prefix"];
-    var results = getArtists(prefix);
+    var results = {
+        suggestions: getArtists(prefix)
+    };
     res.send(JSON.stringify(results, null, 2));
 });
-app.get('/autosuggest/all', function (req, res) {
+app.get('/suggest/all', function (req, res) {
     var prefix = req.query["prefix"];
     var results = {
         artists: getArtists(prefix),
