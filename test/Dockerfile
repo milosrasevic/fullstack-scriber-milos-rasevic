@@ -1,2 +1,6 @@
-FROM curlimages/curl
-RUN 'curl http://service:8080/suggest/all/'
+FROM node
+COPY . /code
+WORKDIR /code
+RUN cd /code; npm i
+CMD npm run test
+
