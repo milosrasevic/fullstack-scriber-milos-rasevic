@@ -48,8 +48,11 @@ var getReleases = function (prefix) { return releases
     .map(function (x) { return ({
     id: x.Id,
     title: x.Title,
-    description: x.Notes,
-    artist: x.Artists
+    notes: x.Notes,
+    artist: x.Artists.map(function (a) { return ({
+        id: a.Id,
+        name: a.Name
+    }); })
 }); })
     .slice(0, 5); };
 var getArtists = function (prefix) { return artists
@@ -58,8 +61,9 @@ var getArtists = function (prefix) { return artists
     id: x.Id,
     name: x.Name,
     releases: x.Releases.map(function (r) { return ({
+        id: x.Id,
         title: r.Title,
-        description: r.Notes
+        notes: r.Notes
     }); })
 }); })
     .slice(0, 5); };
@@ -70,7 +74,8 @@ var getTracks = function (prefix) { return tracks
     duration: x.Duration,
     release: {
         id: x.Release.Id,
-        title: x.Release.Title
+        title: x.Release.Title,
+        notes: x.Release.Notes
     }
 }); })
     .slice(0, 5); };
