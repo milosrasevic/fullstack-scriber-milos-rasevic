@@ -36,9 +36,11 @@ With outputs shaped as follows:
       "id": <artist_id>,
       "name": <artist_name>,
       "releases": [
-        "id": <release_id>,
-        "title": <release_title>,
-        "notes": <release_notes>
+        {
+          "id": <release_id>,
+          "title": <release_title>,
+          "notes": <release_notes>
+        }
       ]
     }
   ]
