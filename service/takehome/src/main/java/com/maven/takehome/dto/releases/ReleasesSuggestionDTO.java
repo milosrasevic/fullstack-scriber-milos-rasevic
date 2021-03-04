@@ -1,5 +1,6 @@
 package com.maven.takehome.dto.releases;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.maven.takehome.dto.ArtistDTO;
 
 import java.util.ArrayList;
@@ -18,6 +19,14 @@ public class ReleasesSuggestionDTO {
         this.id = id;
         this.title = title;
         this.notes = notes;
+        this.artist = artist;
+    }
+
+    public ReleasesSuggestionDTO(JsonNode release, ArrayList<ArtistDTO> artist) {
+        this.id = release.get("Id").asInt();
+        this.title = release.get("Title").asText();
+        String notesString = release.get("Notes").asText();
+        this.notes = (notesString.equalsIgnoreCase("null")) ? null : notesString;
         this.artist = artist;
     }
 

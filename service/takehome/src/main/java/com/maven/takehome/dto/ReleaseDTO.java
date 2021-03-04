@@ -1,5 +1,7 @@
 package com.maven.takehome.dto;
 
+import com.fasterxml.jackson.databind.JsonNode;
+
 public class ReleaseDTO {
 
     private Integer id;
@@ -13,6 +15,13 @@ public class ReleaseDTO {
         this.id = id;
         this.title = title;
         this.notes = notes;
+    }
+
+    public ReleaseDTO(JsonNode release) {
+        this.id = release.get("Id").asInt();
+        this.title = release.get("Title").asText();
+        String notesString = release.get("Notes").asText();
+        this.notes = (notesString.equalsIgnoreCase("null")) ? null : notesString;
     }
 
     public Integer getId() {

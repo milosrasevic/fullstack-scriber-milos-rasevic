@@ -12,11 +12,11 @@ import com.maven.takehome.dto.releases.ReleasesSuggestionsDTO;
 import com.maven.takehome.dto.tracks.TracksSuggestionDTO;
 import com.maven.takehome.dto.tracks.TracksSuggestionsDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
-import org.springframework.util.ResourceUtils;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 
@@ -28,8 +28,9 @@ public class SuggestionServiceImpl implements SuggestionService {
 
     @Override
     public TracksSuggestionsDTO getTracksSuggestions(String title) throws IOException {
-        File file = ResourceUtils.getFile("src/main/resources/data.json");
-        JsonNode jsonNode = objectMapper.readTree(file);
+
+        InputStream is = new ClassPathResource("data.json").getInputStream();
+        JsonNode jsonNode = objectMapper.readTree(is);
 
         ArrayList<TracksSuggestionDTO> suggestions = new ArrayList<TracksSuggestionDTO>();
 
@@ -58,13 +59,7 @@ public class SuggestionServiceImpl implements SuggestionService {
 
         String title = track.get("Title").asText();
         String duration = track.get("Duration").asText();
-
-        Integer releaseId = release.get("Id").asInt();
-        String releaseTitle = release.get("Title").asText();
-        String releaseNotes = release.get("Notes").asText();
-
-
-        ReleaseDTO releaseDTO = new ReleaseDTO(releaseId, releaseTitle, releaseNotes);
+        ReleaseDTO releaseDTO = new ReleaseDTO(release);
 
         TracksSuggestionDTO tracksSuggestionDTO = new TracksSuggestionDTO(title, duration, releaseDTO);
         return tracksSuggestionDTO;
@@ -73,8 +68,8 @@ public class SuggestionServiceImpl implements SuggestionService {
     @Override
     public ArtistsSuggestionsDTO getArtistsSuggestions(String name) throws IOException {
 
-        File file = ResourceUtils.getFile("src/main/resources/data.json");
-        JsonNode jsonNode = objectMapper.readTree(file);
+        InputStream is = new ClassPathResource("data.json").getInputStream();
+        JsonNode jsonNode = objectMapper.readTree(is);
 
         ArrayList<ArtistsSuggestionDTO> suggestions = new ArrayList<ArtistsSuggestionDTO>();
 
@@ -110,11 +105,7 @@ public class SuggestionServiceImpl implements SuggestionService {
             JsonNode artists = r.get("Artists");
             for (int j = 0; j < artists.size(); j++) {
                 if (artists.get(j).get("Id").asInt() == artistId) {
-                    Integer releaseId = r.get("Id").asInt();
-                    String releaseTitle = r.get("Title").asText();
-                    String releaseNotes = r.get("Notes").asText();
-
-                    releases.add(new ReleaseDTO(releaseId, releaseTitle, releaseNotes));
+                    releases.add(new ReleaseDTO(r));
                 }
             }
         }
@@ -126,8 +117,8 @@ public class SuggestionServiceImpl implements SuggestionService {
 
     @Override
     public ReleasesSuggestionsDTO getReleasesSuggestions(String title) throws IOException {
-        File file = ResourceUtils.getFile("src/main/resources/data.json");
-        JsonNode jsonNode = objectMapper.readTree(file);
+        InputStream is = new ClassPathResource("data.json").getInputStream();
+        JsonNode jsonNode = objectMapper.readTree(is);
 
         ArrayList<ReleasesSuggestionDTO> suggestions = new ArrayList<ReleasesSuggestionDTO>();
 
@@ -148,10 +139,6 @@ public class SuggestionServiceImpl implements SuggestionService {
 
     private ReleasesSuggestionDTO getReleaseSuggestion(JsonNode release) {
 
-        Integer releaseId = release.get("Id").asInt();
-        String releaseTitle = release.get("Title").asText();
-        String releaseNotes = release.get("Notes").asText();
-
         ArrayList<ArtistDTO> artists = new ArrayList<ArtistDTO>();
 
         for (int i = 0; i < release.get("Artists").size(); i++) {
@@ -163,7 +150,7 @@ public class SuggestionServiceImpl implements SuggestionService {
             artists.add(new ArtistDTO(artistId, artistName));
         }
 
-        return new ReleasesSuggestionDTO(releaseId, releaseTitle, releaseNotes, artists);
+        return new ReleasesSuggestionDTO(release, artists);
     }
 
     @Override
